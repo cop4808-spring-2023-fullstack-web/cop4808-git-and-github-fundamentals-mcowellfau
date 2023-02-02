@@ -50,7 +50,10 @@ function clickButton() {
             }else if(buttons[i].classList.contains('tan')) { 
                 tan(displayValue);
                 updateDisplay();
-            }        
+            }else if(buttons[i].classList.contains('pi')) { 
+                pi(displayValue);
+                updateDisplay();
+            }                
         }
     )}
 }
@@ -196,4 +199,8 @@ function sin(num) {
 
 function tan(num) {
     return displayValue = Math.tan(num).toFixed(8);
+}
+
+function pi() {
+    return displayValue = Math.PI.toFixed(8);
 }
