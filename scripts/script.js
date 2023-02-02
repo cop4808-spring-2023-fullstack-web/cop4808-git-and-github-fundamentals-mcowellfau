@@ -41,9 +41,13 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } else if(buttons[i].classList.contains('clear')){
                 clearDisplay();
                 updateDisplay();
+            } else if(buttons[i].classList.contains('sin')) { 
+                sin(displayValue);
+                updateDisplay();
+            }    
         }
     )}
 }
@@ -181,4 +185,8 @@ function operate(x, y, op) {
 
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
+}
+
+function sin(num) {
+    return displayValue = Math.sin(num).toFixed(8);
 }
