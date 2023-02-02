@@ -53,7 +53,10 @@ function clickButton() {
             }else if(buttons[i].classList.contains('pi')) { 
                 pi(displayValue);
                 updateDisplay();
-            }                
+            }else if(buttons[i].classList.contains('cos')) { 
+                cos(displayValue);
+                updateDisplay();
+            }                        
         }
     )}
 }
@@ -203,4 +206,8 @@ function tan(num) {
 
 function pi() {
     return displayValue = Math.PI.toFixed(8);
+}
+
+function cos(num) {
+    return displayValue = Math.cos(num).toFixed(8);
 }
