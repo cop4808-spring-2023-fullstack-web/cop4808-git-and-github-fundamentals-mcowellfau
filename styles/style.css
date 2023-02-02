@@ -57,6 +57,16 @@ button {
     background-color: #FF8F1F;    
 }
 
+.sin, .cos, .tan {
+    background-color: #9704ec; 
+    font-weight: bold;   
+}
+
+.pi{
+    background-color:blue;
+    font-weight: bold;
+}
+
 .operator:focus {
     background-color: #ffc183;
 }
