@@ -47,7 +47,10 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sin')) { 
                 sin(displayValue);
                 updateDisplay();
-            }    
+            }else if(buttons[i].classList.contains('tan')) { 
+                tan(displayValue);
+                updateDisplay();
+            }        
         }
     )}
 }
@@ -189,4 +192,8 @@ function roundAccurately(num, places) {
 
 function sin(num) {
     return displayValue = Math.sin(num).toFixed(8);
+}
+
+function tan(num) {
+    return displayValue = Math.tan(num).toFixed(8);
 }
