@@ -44,6 +44,7 @@ function clickButton() {
             } else if(buttons[i].classList.contains('clear')){
                 clearDisplay();
                 updateDisplay();
+            //added click functionality for the new buttons and function calls for the calculations
             } else if(buttons[i].classList.contains('sin')) { 
                 sin(displayValue);
                 updateDisplay();
@@ -195,19 +196,19 @@ function operate(x, y, op) {
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
-
+//sin function using math library fixed to 8 decimals
 function sin(num) {
     return displayValue = Math.sin(num).toFixed(8);
 }
-
+//tan function using math library fixed to 8 decimals
 function tan(num) {
     return displayValue = Math.tan(num).toFixed(8);
 }
-
+//pi function using math library fixed to 8 decimals
 function pi() {
     return displayValue = Math.PI.toFixed(8);
 }
-
+//cos function using math library fixed to 8 decimals
 function cos(num) {
     return displayValue = Math.cos(num).toFixed(8);
 }

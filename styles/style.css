@@ -20,6 +20,7 @@ html {
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
+    /*added a new row to accomodate new buttons*/
     grid-template-rows: minmax(100px, auto) repeat(6, 80px);
     gap: 2px;
 }
@@ -56,12 +57,12 @@ button {
 .operator {
     background-color: #FF8F1F;    
 }
-
+/*color grouping for trig functions*/
 .sin, .cos, .tan {
     background-color: #9704ec; 
     font-weight: bold;   
 }
-
+/*separate color for pi function of calculator*/
 .pi{
     background-color:blue;
     font-weight: bold;
